@@ -1,0 +1,36 @@
+{
+  "name": "framework_cucamber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testing",
+    "wdio": "wdio run wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igoross/Setup_Framework_Cucamber.git"
+  },
+  "keywords": [
+    "wedriverio",
+    "JS",
+    "cucamber"
+  ],
+  "author": "igorostojic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igoross/Setup_Framework_Cucamber/issues"
+  },
+  "homepage": "https://github.com/igoross/Setup_Framework_Cucamber#readme",
+  "devDependencies": {
+    "@wdio/cli": "^7.26.0",
+    "@wdio/cucumber-framework": "^7.26.0",
+    "@wdio/local-runner": "^7.26.0",
+    "@wdio/spec-reporter": "^7.26.0",
+    "chromedriver": "^107.0.3",
+    "wdio-chromedriver-service": "^8.0.0"
+  },
+  "dependencies": {
+    "@wdio/sync": "^7.26.0"
+  }
+}
