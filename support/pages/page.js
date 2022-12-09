@@ -3,11 +3,27 @@
 * that is shared across all page objects
 */
 module.exports = class Page {
-    /**
-    * Opens a sub page of the page
-    * @param path path of the sub page (e.g. /path/to/page.html)
-    */
-    open (path) {
-        return browser.url(`https://the-internet.herokuapp.com/${path}`)
+    getText(element){
+        element.waitForDisplayed({timeout: 30000})
+        browser.pause(50)
+        return element.getText()
+    }
+
+    setValue(element, value){
+        element.waitForDisplayed({timeout: 30000})
+        browser.pause(50)
+        element.setValue(value)
+    }
+
+    addValue(element, value){
+        element.waitForDisplayed({timeout: 30000})
+        browser.pause(50)
+        element.addValue(value)
+    }
+
+    click(element){
+        element.waitForDisplayed({ timeout: 30000 })
+        browser.pause(50)
+        element.click()
     }
 }
