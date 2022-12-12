@@ -16,8 +16,8 @@ class ProductPage extends Page{
    get itemDescription (){
     return $('#inventory_item_container')
    };
-   get backtToProductsBtn (){
-    return $('#continue-shopping')
+   get backToProductsBtn (){
+    return $('#back-to-products')
    };
    get removeBtn (){
     return $('#remove-sauce-labs-backpack')
@@ -42,8 +42,8 @@ class ProductPage extends Page{
     checkProductItemDescription(){
         strictEqual(this.itemDescription.isDisplayed(),true)
     };
-    clickOnBacktToProductBtn(){
-        this.backtToProductsBtn.click()
+    clickOnBacktToProductsBtn(){
+        this.backToProductsBtn.click()
     };
     clickOnRemoveBtnFromProductPage(){
         this.removeBtn.click()

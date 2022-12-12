@@ -107,18 +107,17 @@ Then(/^I should be returned to the home page and continue shopping$/,()=>{
 // Scenario: If I would like to remove a product from the cart
 
 
-// Given(/^as a user, I am on home page$/, ()=>{
+Given(/^as a user, I am on home page$/, ()=>{
 //     browser.url("https://www.saucedemo.com/");
 //     LoginPage.login("standard_user", "secret_sauce")
 //     ProductPage.clickOnaddToCartButton()
 //     ProductPage.clickOnCartIconLink()
-// });
+});
 
 When(/I click "Remove" button/, ()=>{
     browser.url("https://www.saucedemo.com/");
     LoginPage.login("standard_user", "secret_sauce")
     ProductPage.clickOnaddToCartButton()
-    ProductPage.clickOnCartIconLink()
     CartPage.cLickOnRemoveBtn()
 });
 

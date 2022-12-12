@@ -46,7 +46,7 @@ class HomePage extends Page{
         strictEqual(this.appLogo.isDisplayed(),true)
     };
     clickOnProductItem(){
-        this.productItem.click();
+        this.click(this.productItem);
     };
     CheckIfYouAreOnHomepageProductsPage(){
         strictEqual(this.homePageProducts.isDisplayed(),true)
@@ -70,10 +70,10 @@ class HomePage extends Page{
         strictEqual(this.loginPage.isDisplayed(),true)
     };
     clickOnSortOption(){
-        this.sortBtn.click()
+        this.click(this.sortBtn)
     };
     clickOnOptionAZ(){
-        this.optionAZ.click()
+        this.click(this.optionAZ)
     };
 
     
