@@ -50,7 +50,26 @@ When(/I click on back to products button/,()=>{
 });
 Then(/the page with all products should be displayed/,()=>{
     HomePage.CheckIfYouAreOnHomepageProductsPage()
+});
+
+// Scenario: I am on the product page, and I want to remove product from cart
+
+Given(/as a user, I am on the product page/,()=>{
+    // browser.url("https://www.saucedemo.com/")
+    // LoginPage.login("standard_user", "secret_sauce")
+    
+});
+When(/I click on the remove button/, ()=>{
+    browser.url("https://www.saucedemo.com/")
+    LoginPage.login("standard_user", "secret_sauce")
+    ProductPage.clickOnaddToCartButton()
+    HomePage.clickOnProductItem()
+    CartPage.cLickOnRemoveBtn()
+});
+Then(/the product should be removed from cart/, ()=>{
+    CartPage.checkIfYouAreRemovedItemFromList()
 })
+
 
 
 

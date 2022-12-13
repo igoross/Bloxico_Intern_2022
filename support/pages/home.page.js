@@ -32,10 +32,10 @@ class HomePage extends Page{
         return $('#login_button_container')
     };
     get sortBtn(){
-        return $('#active_option')
+        return $('#product_sort_container')
     };
     get optionAZ(){
-        return $('#az')
+        return $('#lohi')
     };
 
     

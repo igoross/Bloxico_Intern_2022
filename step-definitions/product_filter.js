@@ -9,11 +9,11 @@ Given(/^as a user, I am on the homepage^/, ()=>{
 });
 
 Then(/^the products should be listed in that order$/, ()=>{
-    HomePage.clickOnSortOption();
+    // HomePage.clickOnSortOption();
     HomePage.clickOnOptionAZ();
 
 });
 
 When(/^I click on the search filter name A to Z$/, () => {
-    
+   
 });
